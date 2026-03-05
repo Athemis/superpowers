@@ -2,6 +2,8 @@
 
 Use this template when dispatching an implementer subagent.
 
+"Implementer" is a role name, not an Agent type. Dispatch to the platform's general subagent target (`subagent_type='general-purpose'` or OpenCode `@general`).
+
 ```
 Task tool (general-purpose):
   description: "Implement Task N: [task name]"
