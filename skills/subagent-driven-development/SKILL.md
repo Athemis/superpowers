@@ -37,6 +37,8 @@ digraph when_to_use {
 
 ## The Process
 
+**Naming clarification:** "Implementer" is a role label in this workflow, not an Agent type. Dispatch to the general subagent target for your platform (`subagent_type='general-purpose'` for TaskCreate/Task flows, `@general` for OpenCode `@mention` flows) using the prompt template in `./implementer-prompt.md`.
+
 ```dot
 digraph process {
     rankdir=TB;
@@ -211,6 +213,10 @@ Done!
 - Let implementer self-review replace actual review (both are needed)
 - **Start code quality review before spec compliance is ✅** (wrong order)
 - Move to next task while either review has open issues
+
+**Common dispatch error:**
+- `subagent_type='Implementer'` -> invalid (not a registered Agent type)
+- `subagent_type='general-purpose'` (TaskCreate/Task) or `@general` (OpenCode @mention) -> correct for implementer/spec-reviewer prompts
 
 **If subagent asks questions:**
 - Answer clearly and completely

@@ -4,6 +4,8 @@ Use this template when dispatching a spec compliance reviewer subagent.
 
 **Purpose:** Verify implementer built what was requested (nothing more, nothing less)
 
+Note: "Implementer" here is a role label in the workflow, dispatched to the platform's general subagent target (`subagent_type='general-purpose'` or OpenCode `@general`).
+
 ```
 Task tool (general-purpose):
   description: "Review spec compliance for Task N"
