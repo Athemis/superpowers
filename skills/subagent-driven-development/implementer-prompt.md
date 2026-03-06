@@ -26,7 +26,7 @@ Task tool (general-purpose):
     - Dependencies or assumptions
     - Anything unclear in the task description
 
-    **Ask them now.** In OpenCode, use the `question` tool. Raise any concerns before starting work.
+    **Ask them now.** In OpenCode, use the `question` tool. If the question depends on a proposed approach or detailed context, present that context in a normal assistant message immediately before the tool call. Raise any concerns before starting work.
 
     ## Your Job
 
@@ -40,7 +40,7 @@ Task tool (general-purpose):
 
     Work from: [directory]
 
-    **While you work:** If you encounter something unexpected or unclear, **ask questions**. In OpenCode, use the `question` tool.
+    **While you work:** If you encounter something unexpected or unclear, **ask questions**. In OpenCode, use the `question` tool. If the question depends on a longer explanation, show that explanation in a normal assistant message first.
     It's always OK to pause and clarify. Don't guess or make assumptions.
 
     ## Before Reporting Back: Self-Review

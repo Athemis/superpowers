@@ -37,7 +37,7 @@ digraph when_to_use {
 
 ## The Process
 
-**Naming clarification:** "Implementer" is a role label in this workflow, not an Agent type. Dispatch to the general subagent target for your platform (`subagent_type='general-purpose'` for TaskCreate/Task flows, `@general` for OpenCode `@mention` flows) using the prompt template in `./implementer-prompt.md`. If the subagent needs user clarification in OpenCode, have it use the `question` tool.
+**Naming clarification:** "Implementer" is a role label in this workflow, not an Agent type. Dispatch to the general subagent target for your platform (`subagent_type='general-purpose'` for TaskCreate/Task flows, `@general` for OpenCode `@mention` flows) using the prompt template in `./implementer-prompt.md`. If the subagent needs user clarification in OpenCode, have it use the `question` tool, but only after presenting any necessary context in a normal assistant message.
 
 ```dot
 digraph process {
@@ -223,6 +223,7 @@ Done!
 - Provide additional context if needed
 - Don't rush them into implementation
 - If you're relaying questions to the user in OpenCode, use the `question` tool
+- If the question depends on a proposed approach, trade-off, or design sketch, present that content in a normal message first
 
 **If reviewer finds issues:**
 - Implementer (same subagent) fixes them

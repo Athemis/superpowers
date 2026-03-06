@@ -102,3 +102,5 @@ When a skill or workflow requires user clarification, use the environment's stru
 - Ask only after doing all non-blocked work first.
 - Prefer concise multiple-choice options when practical, with a recommended default first.
 - If a workflow says to ask one question at a time, still use the `question` tool for that single question.
+- If the question depends on context the tool cannot display well (plans, designs, long options, detailed trade-offs), present that content in a normal assistant message immediately before calling `question`.
+- Do not ask the user to approve or choose between unseen content. Use `question` to capture the decision, not to replace the presentation of the material being decided.
