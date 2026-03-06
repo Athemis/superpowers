@@ -37,7 +37,7 @@ digraph when_to_use {
 
 ## The Process
 
-**Naming clarification:** "Implementer" is a role label in this workflow, not an Agent type. Dispatch to the general subagent target for your platform (`subagent_type='general-purpose'` for TaskCreate/Task flows, `@general` for OpenCode `@mention` flows) using the prompt template in `./implementer-prompt.md`.
+**Naming clarification:** "Implementer" is a role label in this workflow, not an Agent type. Dispatch to the general subagent target for your platform (`subagent_type='general-purpose'` for TaskCreate/Task flows, `@general` for OpenCode `@mention` flows) using the prompt template in `./implementer-prompt.md`. If the subagent needs user clarification in OpenCode, have it use the `question` tool.
 
 ```dot
 digraph process {
@@ -172,7 +172,7 @@ Done!
 - Subagents follow TDD naturally
 - Fresh context per task (no confusion)
 - Parallel-safe (subagents don't interfere)
-- Subagent can ask questions (before AND during work)
+- Subagent can ask questions (before AND during work), and in OpenCode those should go through the `question` tool
 
 **vs. Executing Plans:**
 - Same session (no handoff)
@@ -222,6 +222,7 @@ Done!
 - Answer clearly and completely
 - Provide additional context if needed
 - Don't rush them into implementation
+- If you're relaying questions to the user in OpenCode, use the `question` tool
 
 **If reviewer finds issues:**
 - Implementer (same subagent) fixes them

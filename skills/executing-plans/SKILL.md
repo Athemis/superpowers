@@ -57,7 +57,7 @@ After all tasks complete and verified:
 - You don't understand an instruction
 - Verification fails repeatedly
 
-**Ask for clarification rather than guessing.**
+**Ask for clarification rather than guessing. In OpenCode, use the `question` tool.**
 
 ## When to Revisit Earlier Steps
 

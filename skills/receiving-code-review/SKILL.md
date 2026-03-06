@@ -17,7 +17,7 @@ Code review requires technical evaluation, not emotional performance.
 WHEN receiving code review feedback:
 
 1. READ: Complete feedback without reacting
-2. UNDERSTAND: Restate requirement in own words (or ask)
+2. UNDERSTAND: Restate requirement in own words (or ask via the `question` tool in OpenCode)
 3. VERIFY: Check against codebase reality
 4. EVALUATE: Technically sound for THIS codebase?
 5. RESPOND: Technical acknowledgment or reasoned pushback
@@ -33,7 +33,7 @@ WHEN receiving code review feedback:
 
 **INSTEAD:**
 - Restate the technical requirement
-- Ask clarifying questions
+- Ask clarifying questions; in OpenCode, use the `question` tool
 - Push back with technical reasoning if wrong
 - Just start working (actions > words)
 
@@ -42,7 +42,7 @@ WHEN receiving code review feedback:
 ```
 IF any item is unclear:
   STOP - do not implement anything yet
-  ASK for clarification on unclear items
+  ASK for clarification on unclear items via the `question` tool in OpenCode
 
 WHY: Items may be related. Partial understanding = wrong implementation.
 ```

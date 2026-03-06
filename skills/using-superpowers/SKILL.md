@@ -93,3 +93,12 @@ The skill itself tells you which.
 ## User Instructions
 
 Instructions say WHAT, not HOW. "Add X" or "Fix Y" doesn't mean skip workflows.
+
+## Asking Users Questions
+
+When a skill or workflow requires user clarification, use the environment's structured question mechanism instead of freeform chat questions whenever one exists.
+
+- **In OpenCode:** use the `question` tool for all follow-up questions, clarification requests, approvals, and option selection presented to the user.
+- Ask only after doing all non-blocked work first.
+- Prefer concise multiple-choice options when practical, with a recommended default first.
+- If a workflow says to ask one question at a time, still use the `question` tool for that single question.
