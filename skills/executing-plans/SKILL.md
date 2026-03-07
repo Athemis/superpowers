@@ -57,7 +57,7 @@ After all tasks complete and verified:
 - You don't understand an instruction
 - Verification fails repeatedly
 
-**Ask for clarification rather than guessing. In OpenCode, use the `question` tool, and if the question depends on plan details or trade-offs, show that context in a normal message first.**
+**Ask for clarification rather than guessing. In OpenCode, use the `question` tool, and if the question depends on plan details or trade-offs, show that context in a normal message first. Do not rely on `question` justification text for plan context the user must see before answering.**
 
 ## When to Revisit Earlier Steps
 
