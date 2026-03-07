@@ -9,7 +9,7 @@ description: "You MUST use this before any creative work - creating features, bu
 
 Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
 
-Start by understanding the current project context, then ask questions one at a time to refine the idea. In OpenCode, use the `question` tool for each user-facing clarification or approval step, but present any design or plan content in a normal message immediately beforehand. Do not rely on `question` justification text for content the user must see before deciding. Once you understand what you're building, present the design and get user approval.
+Start by understanding the current project context, then ask questions one at a time to refine the idea. In OpenCode, use the `question` tool for each user-facing clarification or approval step, but present any design or plan content in a normal, user-visible assistant chat message first and call `question` only afterward. Do not rely on `Thinking` or `question` justification text for content the user must see before deciding. Once you understand what you're building, present the design and get user approval.
 
 <HARD-GATE>
 Do NOT invoke any implementation skill, write any code, scaffold any project, or take any implementation action until you have presented a design and the user has approved it. This applies to EVERY project regardless of perceived simplicity.
@@ -63,8 +63,8 @@ digraph brainstorming {
 - Check out the current project state first (files, docs, recent commits)
 - Ask questions one at a time to refine the idea
 - In OpenCode, use the `question` tool for each clarification or approval request
-- If approval depends on seeing a design section, show that section in a normal message first, then ask with `question`
-- Never put design content the user must review only in `question` justification text
+- If approval depends on seeing a design section, send that section in a visible assistant chat message first, then ask with `question` in a later response
+- Never put design content the user must review only in `Thinking` or `question` justification text
 - Prefer multiple choice questions when possible, but open-ended is fine too
 - Only one question per message - if a topic needs more exploration, break it into multiple questions
 - Focus on understanding: purpose, constraints, success criteria
@@ -77,7 +77,7 @@ digraph brainstorming {
 **Presenting the design:**
 - Once you believe you understand what you're building, present the design
 - Scale each section to its complexity: a few sentences if straightforward, up to 200-300 words if nuanced
-- Ask after each section whether it looks right so far, using the `question` tool in OpenCode after showing the section in a normal message
+- Ask after each section whether it looks right so far, using the `question` tool in OpenCode only after the section has been shown in a visible assistant chat message
 - Cover: architecture, components, data flow, error handling, testing
 - Be ready to go back and clarify if something doesn't make sense
 

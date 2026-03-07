@@ -17,7 +17,7 @@ Code review requires technical evaluation, not emotional performance.
 WHEN receiving code review feedback:
 
 1. READ: Complete feedback without reacting
-2. UNDERSTAND: Restate requirement in own words (or ask via the `question` tool in OpenCode, after presenting any needed context in a normal message and not only in justification text)
+2. UNDERSTAND: Restate requirement in own words (or ask via the `question` tool in OpenCode, after presenting any needed context in a visible assistant chat message and not only in `Thinking` or justification text)
 3. VERIFY: Check against codebase reality
 4. EVALUATE: Technically sound for THIS codebase?
 5. RESPOND: Technical acknowledgment or reasoned pushback
@@ -43,8 +43,8 @@ WHEN receiving code review feedback:
 IF any item is unclear:
   STOP - do not implement anything yet
   ASK for clarification on unclear items via the `question` tool in OpenCode
-  If the clarification depends on quoting or summarizing specific review context, present that context in a normal assistant message immediately before the tool call
-  Do not put required review context only in `question` justification text
+  If the clarification depends on quoting or summarizing specific review context, present that context in a visible assistant chat message before the tool call
+  Do not put required review context only in `Thinking` or `question` justification text
 
 WHY: Items may be related. Partial understanding = wrong implementation.
 ```

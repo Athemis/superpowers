@@ -100,6 +100,6 @@ You: [Fix progress indicators]
 **If reviewer wrong:**
 - Push back with technical reasoning
 - Show code/tests that prove it works
-- Request clarification; in OpenCode, use the `question` tool, and present any needed review context in a normal message first rather than relying on justification text
+- Request clarification; in OpenCode, use the `question` tool, and present any needed review context in a visible assistant chat message first rather than relying on `Thinking` or justification text
 
 See template at: requesting-code-review/code-reviewer.md
